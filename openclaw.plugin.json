@@ -1,0 +1,18 @@
+{
+  "id": "openclaw-tinyfish",
+  "name": "OpenClaw TinyFish CLI",
+  "description": "Wraps the tinyfish-cli tool to expose browser automation operations as agent-callable tools. Supports synchronous and asynchronous runs, run management, and concurrent fanout execution.",
+  "version": "1.0.0",
+  "kind": "runtime",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "tfcliPath": { "type": "string" },
+      "apiKey":    { "type": "string" },
+      "baseUrl":   { "type": "string" },
+      "timeout":   { "type": "number" },
+      "debug":     { "type": "boolean" }
+    }
+  }
+}
